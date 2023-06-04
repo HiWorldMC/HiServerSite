@@ -1,0 +1,47 @@
+<local:MyCard Title="公告" Margin="0,0,0,15" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="请务必加入我们的QQ群：555368684" />
+        <local:MyHint Margin="0,8,0,2" Text="如果您没有安装Java17/18，请点击下方菜单的【安装Java18】" />
+        <TextBlock TextWrapping="Wrap" Margin="0,8,0,2"
+                    Text="Hi，欢迎使用Hi世界客户端！" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="本客户端内置28个优化模组，保证您的流畅体验！" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="快捷菜单" Margin="0,0,0,15" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                    Text="这里包含了一些常用功能" />
+        <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                        Text="进入Hi世界服务器" EventType="启动游戏" EventData="Hi世界优化整合包|play.hitech0926.com" ToolTip="点击启动并进入Hi世界服务器" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="安装Java18" EventType="打开文件" EventData="../jdk-18.0.2.1.exe" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="打开服务器官网" EventType="打开网页" EventData="https://mc.hitech0926.com/" />
+        </StackPanel>
+        <!-- 这是第二行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="联系服主" EventType="打开网页" EventData="http://2t8.cn/bdDlG" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="刷新主页" EventType="刷新主页" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                        Text="加入QQ群" EventType="打开网页" EventData="http://2t8.cn/8rJQK" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="关于" Margin="0,0,0,15" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="本整合包全程由HiTech0926制作，仅供Hi世界服务器玩家使用！" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="Copyright © 2022 - 2023 HiServer. All Rights Reserved. Hi世界 版权所有" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="Made by HiTech0926 Powered by Plain Craft Launcher 2" />
+    </StackPanel>
+</local:MyCard>
